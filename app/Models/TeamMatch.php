@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class TeamMatch extends Model
 {
     use HasFactory;
+     protected $fillable = [
+        'match_type','team_1_id','team_2_id','winner_id'
+    ];
     protected $table="team_matches";
     public function team1_match()
     {
